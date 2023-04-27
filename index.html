@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
                             <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,22 +22,22 @@
 <header>
                                     <!-- nav bar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="image/LogoMakerCa-1682480375670.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Education</a>
+          <a class="nav-link" href="#education">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Skills</a>
@@ -55,16 +57,103 @@
 </header>
 
                         <!-- Home -->
-
-
- 
- <section class="home">
- <div class="row">
-  <div class="col-6 hello"><h1>Hello Everyone,</h1>
-    <h1>I Am <span class="name">Karthikesan</span> </h1>
+<section class="home" id="home">
+  <div class=" col-8 home-content">
+    <h3>Hello,It's Me</h3>
+    <h1>Karthikesan</h1>
+    <h3>And I'm Full Stack <span>Developer</span></h3>
+    <p>Develop a deep understanding of various programming languages, frameworks, and technologies used in web development.</p>
+    <div class="social-media">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <!-- <a href="#" class="button">Download Resume</a> -->
+    <div class="btn">
+    <button type="button" class="btn btn-info">Dowload Resume</button>
+    </div>
   </div>
-  <div class="col-6"></div>
- </div>
+<div class=" col-4 circle">
+
+</div>
+  </div>
+</section>
+                        <!-- About -->
+
+ <section class="about" id="about">
+  <div class="row">
+    <div class="col-6 about-img">
+      <img src="image/me.jpeg" alt="">
+    </div>
+    <div class="col-6 about-content">
+      <h2 class="heading">About<span> Me</span></h2>
+      <h3>Full Stack Developer</h3>
+      <p>"Hi, my name is Karthikesan, and I am a full-stack developer with a passion for front-end development. I have completed a full-stack development course, followed by a six-month internship where I gained practical experience in the field. I have also completed several projects that have allowed me to hone my skills and showcase my ability to work both independently and as part of a team. As a self-confident and fast learner, I enjoy staying up-to-date with the latest technology and techniques in the industry. I am particularly interested in front-end development, as I believe it is the face of any application and plays a critical role in user experience. As a team player, I value collaboration and communication and enjoy working with others to solve complex problems."</p>
+    <div class="btn"><button type="button" class="btn btn-primary">Read More</button>
+
+    </div>
+
+
+    </div>
+   
+  </div>
+ </section>
+                  <!-- education section design  -->
+  <section class="education" id="education">
+    <div class="row">
+      <div class="col-4 card-1">
+        <div class="card" style="width: 18rem;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">SSLC  <i class="fa-solid fa-school"></i></h5>
+            <p class="card-text">with 80%<br>
+              2016<br>
+              D,B,T,R National Higher Secondary School 
+
+            </p>
+            <div class="cardBtn">
+            <a href="#" class="btn btn-info details">More</a>
+                 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 card-2">
+        <div class="card" style="width: 18rem;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">HSC  <i class="fa-solid fa-school"></i></h5>
+            <p class="card-text">with 70.75%<br>
+              2018<br>
+              D,B,T,R National Higher Secondary School</p>
+              <div class="cardBtn">
+            <a href="#" class="btn btn-info details">More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 card-3">
+        <div class="card" style="width: 18rem;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">COLLEGE  <i class="fa-solid fa-graduation-cap"></i></h5>
+            <p class="card-text">
+              with 8.69 CGPA<br>
+              2018-2022<br>
+              Mahendra Engineering College,Namakkal</p>
+              <div class="cardBtn">
+            <a href="#" class="btn btn-info details">More</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
 
     
 </body>
