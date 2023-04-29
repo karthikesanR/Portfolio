@@ -70,6 +70,7 @@ section{
   margin: 54px auto;
   background-image: url(image/IMG_20230422_095942-01-02-removebg-preview.png);
   background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 .home-content p{
   font-size: 1rem;
@@ -244,7 +245,8 @@ margin: 2rem 0 3rem;
 .card{
   color:white;
   border-radius: 60px;
-  background-color: #424874;
+  background-color:#00ADB5;
+  background-color: ;
 }
 .card-title{
   font-weight: 700;
@@ -262,6 +264,17 @@ margin: 2rem 0 3rem;
 
 
               /* card */
+
+
+.education h1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  color: white;
+  font-weight: 700;
+  font-size: rem;
+
+}
               @keyframes fadeInUp {
                 from {
                   opacity: 0;
@@ -294,3 +307,280 @@ margin: 2rem 0 3rem;
               
               
               
+              .details:hover {
+                background-color: #007bff; /* Change this to the desired color */
+                color: #fff; /* Change this to the desired color for the text color */
+              }
+              .details:hover {
+                background-color: #007bff; /* Change this to the desired color */
+                color: #fff; /* Change this to the desired color for the text color */
+                box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Change the values to adjust the shadow effect */
+              }
+
+
+              /* skills */
+
+.skills h1{
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.card{
+/* background-image: url(image/me.jpeg); */
+background-position: center;
+background-size: cover;
+/* height: 500px;
+width: 400px; */
+/* border-radius: 8px; */
+transform: rotate(20deg)skew(-10deg,5deg);
+cursor: pointer;
+transition: 0.3s;
+
+}
+.card:hover{
+  translate: 0 -30px;
+  box-shadow: 5px 5px #ff1385,
+              10px 10px#ff13858f,
+              15px 15px #ff138563;
+
+}
+              
+
+              
+
+
+              
+
+
+
+.skill-card {
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+.skill-card-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.skill-card:hover .skill-card-inner {
+  transform: rotateY(180deg);
+}
+.skill-card-front, .skill-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.skill-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  color: #495057;
+}
+.skill-card-html .skill-card-front {
+  background-color: #F16529;
+  color: #fff;
+}
+.skill-card-css .skill-card-front {
+  background-color: #2965f1;
+  color: #fff;
+}
+.skill-card-javascript .skill-card-front {
+  background-color: #F7DF1E;
+  color: #000;
+}
+.skill-card-bootstrap .skill-card-front {
+  background-color: #563d7c;
+  color: #fff;
+}
+.skill-card-angular .skill-card-front {
+  background-color: #b52e31;
+  color: #fff;
+}
+.skill-card-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.skill-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.skill-card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  color: #495057;
+  padding: 20px;
+}
+.skill-card-rating {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.skill-card-stars {
+  margin-bottom: 10px;
+}
+.skill-card-stars i {
+  font-size: 24px;
+  color: #ffc107;
+  margin-right: 5px;
+}
+.skill-card-rating-number {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.skill-card-description {
+  font-size: 16px;
+  margin: 0;
+}
+
+.my-skills h1{
+  font-weight: 700;
+  color: rgb(28, 24, 24);
+  font-size: 2.6rem;
+  text-align: center;
+}
+.my-skills{
+  margin-top: 77px;
+  
+  margin-bottom: 70px;
+}
+
+.skill-card-css .skill-card-icon {
+  color: #2965f1;
+}
+.skill-card-html .skill-card-icon {
+  color: #E44D26;
+}
+.skill-card-javascript .skill-card-icon {
+  color: #F0DB4F;
+}
+.skill-card-bootstrap .skill-card-icon {
+  color: #7952b3;
+}
+.skill-card-angular .skill-card-icon {
+  color: #DD0031;
+}
+.skill-card-sql .skill-card-icon {
+  color: #00758F;
+}
+
+
+
+/* .skill-card {
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.skill-card:hover .skill-card-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.skill-card-front,
+.skill-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.skill-card-front {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card-back {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-card-back h4,
+.skill-card-back p {
+  margin: 0;
+}
+
+.skill-card-back h4 {
+  font-size: 1.2rem;
+}
+
+.skill-card-back p.skill-card-description {
+  font-size: 0.9rem;
+}
+
+.skill-card-back .skill-card-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card-back .skill-card-stars i {
+  font-size: 1.2rem;
+  color: #ff9800;
+}
+
+.skill-card-back .skill-card-rating-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card:hover .skill-card-front {
+  transform: rotateY(180deg);
+}
+
+.skill-card:hover .skill-card-back {
+  transform: rotateY(0deg);
+} */
+
+.skill-card-front {
+  background: url("") center center/cover;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  /* transition: all 0.3s ease-in-out; */
+  background-color: #cadefc;
+} */
+
+.skill-card-front:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+
+} 
+.my-skills span{
+color: orangered;
+}
+
+
+
+
