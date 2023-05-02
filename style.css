@@ -145,7 +145,7 @@ button:active {
 
 
 .social-media a:hover{
- background-color:rgb(241, 159, 5);
+ background-color:#00ADB5;
   box-shadow:0 0 1;
  
 }
@@ -861,24 +861,27 @@ border-radius: 50%;
   height: 300px;
   width: 100%;
 } */
-.work{
-  height: 300px;
-  width: 300px;
-  /* border-radius: 50%; */
-  background-color: #00ADB5;
-  /* margin: 54px auto; */
-  background-image: url(image/workme.jpeg);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position:center; */
-}
+
 .full-stack span{
   color: orangered;
+}
+.work{
+  height: 314px;
+  width: 400px;
+  margin-left: 79px;
+    margin-top: -16px;
+}
+.work img{
+height: 100%;
+width: 100%;
+/* display: flex;
+align-items: center; */
+mar
 }
 
 /* contact */
 
-/* Center the contact section */
+
 #contact {
   text-align: center;
   padding: 50px 0;
@@ -942,7 +945,7 @@ button[type="submit"]:hover {
   color: orangered;
 }
 .contact{
-  /* background-color: #0069d9; */
+  background-color:khaki;
   margin-top: 75px;
 
 }
@@ -953,6 +956,67 @@ button[type="submit"]:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
-#contact{
+/* .contact-me{
+  display: flex;
+  align-items: center;
+} */
+
+/* .photo h1{
+  display: flex;
+  align-items: center;
+} */
+.photo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-size: cover;
+
+}
+.photo h1{
+  font-size: 4.5rem;
+
+}
+/* .footer{
+  background-color: #71c9CE;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  /* border: .2rem solid var(--main-color); */
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
+  margin: 3rem 1.5rem 0;
+  background-color: black;
+  text-decoration: none;
+} */
+
+.social-icons{
+  background-color: #71c9CE;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 30%;
+  font-size: 2rem;
+  color: white;
+  margin: 3rem 1.5rem 0;
+  background-color: black;
+  text-decoration: none;
   
+}
+.footer{
+  background-color: #A6E3E9;
+  /* background-color:; */
+}
+.footer-nav{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
 }
