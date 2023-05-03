@@ -1,14 +1,14 @@
-const btn = document.querySelector('.btn');
-const fullDescription = document.querySelector('#full-description');
+// const readMoreBtn = document.getElementById('readMoreBtn');
+// const additionalContent = document.querySelector('.additionalContent');
 
-btn.addEventListener('click', () => {
-  if (fullDescription.style.display === 'none') {
-    fullDescription.style.display = 'block';
-    btn.textContent = 'Read Less';
-  } else {
-    fullDescription.style.display = 'none';
-    btn.textContent = 'Read More';
-  }
-});
+// readMoreBtn.addEventListener('click', function() {
+//   if (additionalContent.style.display === 'none') {
+//     additionalContent.style.display = 'block';
+//     readMoreBtn.innerText = 'Read Less';
+//   } else {
+//     additionalContent.style.display = 'none';
+//     readMoreBtn.innerText = 'Read More';
+//   }
+// });
 
   
