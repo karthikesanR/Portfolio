@@ -153,7 +153,7 @@ In my free time, I enjoy singing and performing, which has taught me discipline,
       <div class="card mb-4 second-card">
         <div class="card-body">
           <h5 class="card-title">COLLEGE  <i class="fa-solid fa-graduation-cap"></i></h5>
-          <p class="card-text">
+          <p class="card-text">with 8.69 CGPA<br>
             2018-2022<br>
             Mahendra Engineering College,Namakkal
           </p>
@@ -380,7 +380,7 @@ In my free time, I enjoy singing and performing, which has taught me discipline,
                   <div class="certificate-heading">
                     <h1>My <span>Certificates</span></h1>
                   </div>
-                  <div class="row certificate" data-aos="fade-right">
+                  <div class="row certificate">
                     <div class="col-lg-12">
                       <div class="timeline">
                         <div class="timeline-item">
@@ -485,7 +485,7 @@ In my free time, I enjoy singing and performing, which has taught me discipline,
                           <h1>with me</h1>
                           </div>
                         <div class="col-6 information">
-                          <form>
+                          <form action="data.php" method="POST">
                             <div class="form-group">
                               <label for="name">Name</label>
                               <input type="text" class="form-control" id="name" required>
@@ -502,6 +502,7 @@ In my free time, I enjoy singing and performing, which has taught me discipline,
                               <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                           </form>
+                         
                   
                         </div>
                         </div>
@@ -517,6 +518,7 @@ In my free time, I enjoy singing and performing, which has taught me discipline,
                             <div class="row footer">
                               <div class="col-md-6 col-sm-12">
                                 <div class="social-media">
+
                                   <a href="https://instagram.com/mr_karthikesan?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
                                   <a href="https://www.facebook.com/profile.php?id=100009318358813&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
                                   <a href="https://www.linkedin.com/in/karthi-kesan-34120125a/"><i class="fa-brands fa-linkedin"></i></a>
@@ -563,7 +565,32 @@ readMoreBtn.addEventListener('click', function() {
     readMoreBtn.innerText = 'Read More';
   }
 });
-  </script>            
+
+
+// Select the hamburger button and the navigation menu
+const hamburger = document.querySelector('.navbar-toggler');
+const navMenu = document.querySelector('.navbar-collapse');
+
+// Add a click event listener to the hamburger button
+hamburger.addEventListener('click', function() {
+  // Toggle the "open" class on the navigation menu
+  navMenu.classList.toggle('open');
+});
+
+// Add a click event listener to the document object
+document.addEventListener('click', function(event) {
+  // If the clicked element is not the hamburger button or a link within the navigation menu, close the menu
+  if (!event.target.matches('.navbar-toggler') && !event.target.closest('.navbar-collapse')) {
+    navMenu.classList.remove('open');
+  }
+});
+
+
+
+
+
+  </script>   
+ 
               
               <script>
                 AOS.init();
@@ -571,6 +598,7 @@ readMoreBtn.addEventListener('click', function() {
           
             
 <!-- Bootstrap JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
