@@ -1378,10 +1378,19 @@ background-size: cover;
   
   .circle img {
     width: 46%;
-    height: 100%;
+    height: 122%;
     object-fit: cover;
-    margin-bottom: -8px;
+    margin-bottom: -26px;
   }
+  .work img{
+    position: relative;
+    right: 170px;
+    }
+  
+    .about-img{
+    position: relative;
+    left: 0px;
+    }
   
 }
 
