@@ -348,6 +348,7 @@ margin: 2rem 0 3rem;
   font-size: 2.6rem;
   font-weight: 700;
   color: white;
+  padding-top: 128px;
 }
 
 .card{
@@ -554,6 +555,7 @@ color: orangered;
   text-align: center;
   font-size: 2.6rem;
   font-weight: 700;
+  padding-top: 10px;
 }
 .certificate span{
   color: orangered;
@@ -678,6 +680,7 @@ color: orangered;
  .experience h2{
   font-size: 2.6rem;
   font-weight: 700;
+  padding-top: 85px;
 
  }
  .experience h1{
@@ -790,6 +793,7 @@ button[type="submit"]:hover {
 .contact-me h1{
   font-weight: 700;
   font-size: 2.6rem;
+  padding-top: 90px;
 }
 .contact-me span{
   color: orangered;
