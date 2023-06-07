@@ -1,0 +1,11 @@
+<p>child works!</p>
+<p>Received data from parent: {{ childData }}</p>
+<button (click)="sendMessage()">Send Message to Parent</button>
+<ul>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+
+
+<button (click)="sendDataToParent()">Send Data to Parent</button>
+
+

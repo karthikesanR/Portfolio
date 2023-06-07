@@ -1,0 +1,35 @@
+<p>parent works!</p>
+<app-child [childData]="parentData"></app-child>
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+<p>Received message from child: {{ receivedMessage }}</p>
+<app-child [names]="names"></app-child>
+
+<app-child (dataEvent)="addData($event)"></app-child>
+<table>
+
+  <tr>
+      <th>ID</th>
+      <th>USERNMAE</th>
+      <th>EMAIL</th>
+      <th>MESSAGE</th>
+      <!-- <th>ISACTIVE</th> -->
+  </tr>
+  <tr *ngFor="let e of student">
+    <!-- {{student|json}} -->
+       <td>{{e.id}}</td>
+      <td>{{e.username}}</td>
+      <td>{{e.email}}</td> 
+      <td>{{e.message}}</td>
+      <!-- <td>{{e.isactive}}</td> -->
+      
+
+  </tr>
+</table>
+
+
+
+
+
+
+
+
