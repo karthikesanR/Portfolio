@@ -1,0 +1,18 @@
+<form>
+  <div class="flex flex-column gap-2">
+    <label htmlFor="email">Email</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" />
+    </div>
+    <div class="flex flex-column gap-2">
+      <label htmlFor="newPassword">New Password</label>
+      <input type="password" id="newPassword" name="newPassword" [(ngModel)]="newPassword" />
+      </div>
+  <div class="flex flex-column gap-2">
+      <label htmlFor="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" />
+  </div>
+  <div class="flex flex-column gap-2">
+      <button type="submit" (click)="forgot()">Submit</button>
+    </div>
+  </form>
+  

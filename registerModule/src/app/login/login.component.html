@@ -1,0 +1,29 @@
+<form #myForm="ngForm" ngForm="myForm">
+    <div>
+        <h1>Login</h1>
+    </div>
+    
+ <!-- <div class="flex flex-column gap-2">
+    <label htmlFor="username">Username</label>
+    
+    <input pInputText id="username" aria-describedby="username-help" [(ngModel)]="valu
+    <small id="username-help">Enter your username to reset your password.</small>
+</div>  -->
+    <div class="form-group">
+         <label>Email:</label>
+         <input type="text" name="email" class="form-control"    [(ngModel)]="email" >
+         </div>
+         <div class="form-group">
+            <label>Password:</label>
+            <input type="password" name="password" class="form-control"    [(ngModel)]="passwords" >
+        </div>
+    <div>
+    <a href="" (click)="forgot()" >forgetten password?</a>
+</div>
+    <button (click)="login()">submit</button> 
+    <p></p>
+
+   
+      
+
+      
